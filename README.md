@@ -11,8 +11,8 @@ Install the packages by typing: `npm install`.
 
 ### How do I run my website to see live changes?  
 
-Type on the command line `$ npm run start` and type localhost on the browser.
-
+Type on the command line `$` and type localhost on the browser.
+ npm run start
 ### Where do I write my code?  
 
 It depends on the language, but you have `./src/app.js`, `./src/style.css` and `./src/index.html` respectively, you can add new `.html` as you please, just make sure to import it on the `app.js`.
