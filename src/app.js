@@ -23,25 +23,47 @@
 //     }
 //   }
 // }
+//lo mejor de dos mundos! no la manera ideal pero imprimia haha.
+// const address = [];
+// let pronoun = ['the', 'our'];
+// let adj = ['great', 'big'];
+// let noun = ['jogger', 'racoon'];
+
+// pronoun.map(primero => {
+//   adj.map(segundo => {
+//     noun.map(tercero => {
+//       address.push(primero + segundo + tercero + ".com")
+      
+//     })
+//   })
+// })
+// console.log(address);
+
+// for (let i = 0; i < address.length; i++){
+//   console.log(address[i])
+// }
+
+
+
+
+//mejor estructurado y ideal! 
+
 
 const address = [];
 let pronoun = ['the', 'our'];
 let adj = ['great', 'big'];
 let noun = ['jogger', 'racoon'];
 
-pronoun.map(primero => {
-  adj.map(segundo => {
-    noun.map(tercero => {
-      address.push(primero + segundo + tercero + ".com")
-      
-    })
-  })
-})
-console.log(address);
 
-for (let i = 0; i < address.length; i++){
-  console.log(address[i])
+
+for (let p of pronoun) {
+  for (let a of adj) {
+    for (let n of noun) {
+      address.push(`${p}${a}${n}.com`);
+    }
+  }
 }
+console.log (address);
 
 
 
